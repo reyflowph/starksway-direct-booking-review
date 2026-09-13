@@ -47,7 +47,14 @@
   <script src="room-vegas.js"></script>
   <script src="room-tahoe.js"></script>
   <script src="room-reno.js"></script>
-  <script>document.getElementById('brandLogo').src=ASSET_MAP['assets/starksway-logo.png']||'';</script>
+  <script>
+    // Approved visual assets from STARKSWAY_Direct_Booking_V2_2_3_Client_Review_FINAL_FIXED(3).zip
+    ASSET_MAP['assets/starksway-logo.png']='approved-assets/logo.webp';
+    ASSET_MAP['assets/stays/henderson-01.webp']='approved-assets/henderson.webp';
+    ASSET_MAP['assets/stays/kingston-cover-v22.png']='approved-assets/kingston.webp';
+    ASSET_MAP['assets/stays/mini-house-cover-v22.png']='approved-assets/mini-house.webp';
+    document.getElementById('brandLogo').src=ASSET_MAP['assets/starksway-logo.png'];
+  </script>
   <script src="data.js"></script>
   <script src="availability-seed.js"></script>
   <script src="engine.js"></script>
